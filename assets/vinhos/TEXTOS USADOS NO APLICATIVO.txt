@@ -1,0 +1,43 @@
+TEXTOS USADOS NO APLICATIVO
+
+--------------------------------------------------------------------------------
+
+TELA INICIAL
+
+Adega Preferida
+Aqui você encontra os melhores e mais saborosos vinhos.
+
+--------------------------------------------------------------------------------
+
+TELA CATÁLOGO
+
+Nossos vinhos
+Trabalhamos com o melhor vinho dos seguintes tipos: Vinho branco, vinho rosé, vinho tinto e vinho seco.
+
+Chatigny Chardonnay
+Vinho leve, refrescante e levemente cítrico da cor amarelo palha. Perfeito com carnes brancas e massa ao pesto.
+
+Concha y Toro Exportacion
+Vinho rosé fresco, intenso e macio da cor rosa pálido. Perfeito com saladas e aperitivos.
+
+Portada Winemaker's
+Vinho encorpado, saboroso e frutado, com final levemente adocicado. Sua cor é vermelho-rubi.Perfeito com queijo parmesão e carnes assadas ou grelhadas.
+
+Elvio Cogno Ravera Barolo
+Vinho estruturado, com sabor de cereja vermelha madura, framboesa, notas de tabaco e taninos aveludados. Sua cor é vermelho granada e é perfeito com carnes vermelhas e molhos encorpados.
+
+--------------------------------------------------------------------------------
+
+TELA CATÁLOGO
+
+Telefone:
++55 21 000000000
+
+Endereço:
+Av. 123, 222 - Rio de Janeiro RJ 
+
+Email:
+preferida@adega.com.br
+
+Instagram:
+@adegapreferida
