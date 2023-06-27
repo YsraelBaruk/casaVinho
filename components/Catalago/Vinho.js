@@ -10,12 +10,13 @@ export default function Card({props, vinho}) {
     <ScrollView>
         <Text style={estilo.top}>{vinho.titulo}</Text>
         <Text style={estilo.bottom}>{vinho.texto}</Text>
+
       <ImageBackground 
         style={estilo.container}
         source={require(`../../assets/vinhos/${img}`)}
         resizeMode='contain'
         imageStyle={{borderRadius: 10}}
-        onTouchEnd={irParaDetalhes}
+        onClick={irParaDetalhes}
       >
         <Text style={estilo.titulo}>{vinho.nome}</Text>
         <Text style={estilo.valor}>{`R$ ${vinho.preco}`}</Text>
@@ -29,10 +30,9 @@ const estilo = StyleSheet.create({
     width: 300,
     height: 200,
     justifyContent: 'space-between',
+    alignSelf: 'center',
     marginTop: 10,
     marginBottom: 20,
-    marginLeft: 20,
-    marginRight: 20,
   },
   titulo:{
     padding: 5,
