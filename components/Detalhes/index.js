@@ -15,19 +15,21 @@ export default function Detalhes(props) {
         </Text>
       </View>
       <View style={estilo.body}>
+
           <View style={estilo.slides}>
             <ScrollView horizontal={true}>
               {              
                 vinho.fotos.map(foto=>(
-                  <Image style={estilo.foto} source={require(`../../assets/vinhos/${foto}`)} />)
+                  <Image style={estilo.foto} resizeMode='contain' source={require(`../../assets/vinhos/${foto}`)} />)
                 )
               }
             </ScrollView>
           </View>
+          
           <View style={estilo.info}>
+            <Text style={estilo.nome}>{vinho.nome}</Text>
             <Text style={estilo.valor}>{`R$ ${vinho.preco}`}</Text>
-            <Text style={estilo.valor}>{`texto ${vinho.nome}`}</Text>
-            <Text style={estilo.valor}>{`descricao ${vinho.descricao}`}</Text>
+            <Text style={estilo.desc}>{`Descrição: ${vinho.descricao}`}</Text>
           </View>
       </View>
     </View>

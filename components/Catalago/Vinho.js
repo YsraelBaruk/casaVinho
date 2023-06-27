@@ -1,18 +1,19 @@
 import { ScrollView, StyleSheet, ImageBackground, Text} from 'react-native';
 import styles from './estilo';
 
+//cover, contain, center, stretch, repeat
 
 export default function Card({props, vinho}) {
   const irParaDetalhes = () => { props.navigation.navigate("Detalhes",vinho); };
   let img = vinho.fotos[0];
   return (
     <ScrollView>
-        <Text style={estilo.top}> {vinho.titulo} </Text>
-        <Text style={estilo.bottom}> {vinho.texto} </Text>
+        <Text style={estilo.top}>{vinho.titulo}</Text>
+        <Text style={estilo.bottom}>{vinho.texto}</Text>
       <ImageBackground 
         style={estilo.container}
         source={require(`../../assets/vinhos/${img}`)}
-        resizeMode='repeat'
+        resizeMode='contain'
         imageStyle={{borderRadius: 10}}
         onTouchEnd={irParaDetalhes}
       >
@@ -25,12 +26,13 @@ export default function Card({props, vinho}) {
 
 const estilo = StyleSheet.create({
   container: {
-    width: 380,
-    height: 285,
+    width: 300,
+    height: 200,
     justifyContent: 'space-between',
-    marginBottom: 15,
-    marginLeft: 10,
-    marginRight: 10,
+    marginTop: 10,
+    marginBottom: 20,
+    marginLeft: 20,
+    marginRight: 20,
   },
   titulo:{
     padding: 5,
@@ -39,13 +41,19 @@ const estilo = StyleSheet.create({
     fontSize: 18,
     fontWeight: '500',
     color: 'white',
-    borderTopLeftRadius: 10 ,
-    borderTopRightRadius: 10 
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
   },
   top: {
     fontWeight: 'bold',
     fontSize: 20,
     margin: 15,
+  },
+  bottom: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    margin: 5,
+    alignItems: 'center',
   },
   valor:{
     padding: 5,

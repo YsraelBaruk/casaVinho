@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#ccc',
         borderBottomWidth: 1,
         backgroundColor: '#fff',
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     head_title:{
         fontSize: 18,
@@ -26,16 +26,35 @@ const styles = StyleSheet.create({
     slides:{
        flexDirection: 'row',
        width: 400,
-       height: 300
+       height: 420
     },
     foto:{
         marginTop: 50,
-        width: 380,
-        height: 320,
+        width: 400,
+        height: 300,
     },
     info:{
         width: 350,
-        textAlign: 'left'
+        textAlign: 'left',
+        marginBottom: 35,        
+    },
+    nome: {
+        fontSize: 40,
+        textAlign: 'center',
+    },
+    valor: {
+        color: 'black',
+        fontSize: 20,
+        marginTop: 10,
+        paddingLeft: 10,
+        paddingRight: 10,
+    },
+    desc: {
+        color: 'black',
+        fontSize: 20,
+        marginTop: 5,
+        paddingLeft: 10,
+        paddingRight: 10,
     },
 });
 
